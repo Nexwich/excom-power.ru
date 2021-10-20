@@ -1,0 +1,10 @@
+{
+  "name": "excom-power",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "latest",
+    "slick-carousel": "latest",
+    "fancybox": "latest",
+    "jquery-validation": "latest"
+  }
+}

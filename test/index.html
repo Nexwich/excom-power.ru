@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <!--META-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width">
+
+  <!--Title-->
+  <title>Главная</title>
+
+  <!--StyleSheet-->
+  <link href="../dist/assets/css/styles.min.css" rel="stylesheet" type="text/css">
+  <link href="../dist/assets/fonts/icomoon/style.css" rel="stylesheet" type="text/css">
+  <link href="../dist/assets/fonts/ProximaNova/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="../dist/assets/fonts/MuseoSans/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+</head>
+<body>
+
+<div class="website">
+  <!--nav data-load='{"url":"../src/html/nav-app.html"}'></nav>
+
+  <div data-load='{"url":"../src/html/layouts/mobile-search.html"}'></div>
+
+  <div data-load='{"url":"../src/html/layouts/mobile-nav.html"}'></div>
+
+  <div data-load='{"url":"../src/html/layouts/nav.html"}'></div-->
+
+  <!--Верхний колонтитул-->
+  <header data-load='{"url":"../src/html/layouts/header.html"}'></header>
+
+  <div class="page">
+    <section data-load='{"url":"../src/html/index.html", "load":["index"]}'></section>
+
+    <div class="section-top">
+      <div class="wrapper">
+        <div class="shell">
+          <div class="section-top--content">
+
+            <!--Хлебные крошки-->
+            <section data-load='{"url":"../src/html/widgets/breadcrumbs.html"}'></section>
+
+            <div class="contacts">
+              <div class="phone">
+                <span class="icon icon-phone"></span>
+                <a href="">+7(812) 325 13 06</a>
+              </div>
+              <div class="locale"><img src="../dist/assets/images/flag/rus.png" alt="rus"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <section data-load='{"url":"../src/html/column-image.html", "load":["about"]}'></section>
+
+      <!--Контент-->
+      <main>
+        <section data-load='{"url":"../src/html/news.html", "load":["news"]}'></section>
+
+        <section data-load='{"url":"../src/html/news-full.html", "load":["news-full"]}'></section>
+
+        <section data-load='{"url":"../src/html/about.html", "load":["about"]}'></section>
+
+        <section data-load='{"url":"../src/html/contacts.html", "load":["contacts"]}'></section>
+
+        <section data-load='{"url":"../src/html/our-history.html", "load":["our-history"]}'></section>
+
+        <section data-load='{"url":"../src/html/our-team.html", "load":["our-team"]}'></section>
+
+        <section data-load='{"url":"../src/html/properties.html", "load":["properties"]}'></section>
+
+        <section data-load='{"url":"../src/html/investments.html", "load":["investments"]}'></section>
+
+        <section data-load='{"url":"../src/html/cabinet.html", "load":["cabinet"]}'></section>
+      </main>
+    </div>
+
+    <!--Нижний колонтитул-->
+    <footer data-load='{"url":"../src/html/layouts/footer/footer.html"}'></footer>
+  </div>
+
+  <!--JavaScripts-->
+  <div class="scripts">
+
+    <!--jquery-->
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!--fancybox-->
+    <link href="../bower_components/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+
+    <!--slick-carousel-->
+    <link href="../bower_components/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../bower_components/slick-carousel/slick/slick.min.js"></script>
+
+    <!--Пользовательские скрипты-->
+    <script type='text/javascript' src="test.js"></script>
+    <script type='text/javascript' src="../dist/js/app.min.js"></script>
+  </div>
+
+  <section data-load='{"url":"../src/html/widgets/modal/modal-user.html", "load":["modal-user"]}'></section>
+
+  <div class="counters"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+@import "system/varitables";
+
+.component {
+  @import "./components/news";
+  
+  @import "./components/contacts";
+  
+  @import "./components/personal";
+  
+  @import "./components/properties";
+  
+  @import "./components/histories";
+  
+  @import "./components/reports";
+  
+  @import "./components/users";
+}
+
+.component--header {
+  padding: 80px 0 0;
+  margin-bottom: 60px;
+}
+
+.component--title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  
+  h1 {
+    font-size: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid @color-default;
+  }
+}
+
+@import "./components/presentations";
+
+@import "./components/section-top";
+
+@import "./components/section-index";
+
+@import "components/categories";
+
+@import "components/category";
+
+@import "./components/products";
+
+@import "./components/product";
+
+@import "./components/full-product";
+
+@import "./components/clients-logos";
+
+@import "./components/area-application";
+
+@import "./components/areas-applications";
+
+@import "./components/full-area-application";
+
+@import "./components/category-slid";
+
+@media (max-width: @responsive-mobile) {
+  
+  .component--header {
+    padding: 40px 0 0;
+    margin-bottom: 30px;
+  }
+  
+  .component--title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}

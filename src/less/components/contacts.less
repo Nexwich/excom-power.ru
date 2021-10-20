@@ -1,0 +1,16 @@
+@import "../system/varitables";
+@import "../system/mixins";
+
+
+&.contacts {
+  
+  .html {
+    p { margin-bottom: 22px; }
+  }
+  .map { margin-bottom: 40px; }
+  
+  
+  @media (max-width: @responsive-mobile) {
+    .map { margin-bottom: 25px; }
+  }
+}

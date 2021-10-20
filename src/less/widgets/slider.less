@@ -1,0 +1,106 @@
+@import "../system/varitables";
+// mixins
+@import "../system/mixins";
+
+.slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+&.slider {
+  position: relative;
+  z-index: 1;
+  transition: none;
+  
+  * {
+    transition: none;
+  }
+  
+  .slick-slider {
+    position: relative;
+    margin-bottom: 55px;
+  }
+  
+  .slick-arrow {
+    width: 40px;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background: none;
+    font-size: 30px;
+    color: @color-orange;
+    padding: 0;
+    margin: 0;
+    text-indent: 999px;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    
+    &:before {
+      display: flex;
+      font-family: @font-icomoon;
+      height: 40px;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin-top: -20px;
+      justify-content: center;
+      text-indent: 0;
+    }
+  }
+  
+  .slick-prev {
+    left: 0;
+    
+    &:before {
+      content: "\e90f";
+    }
+  }
+  
+  .slick-next {
+    right: 0;
+    
+    &:before {
+      content: "\e90e";
+    }
+  }
+  
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    
+    li {
+      margin: 0 7px;
+    }
+    
+    button {
+      display: block;
+      width: 5px;
+      height: 5px;
+      margin: 0;
+      text-indent: 999px;
+      background: @color-dots;
+      border-radius: 50%;
+      border: 0;
+      padding: 0;
+      overflow: hidden;
+      .transition(@duration:.5s, @ease:ease, @prop:all);
+    }
+    
+    .slick-active {
+      
+      button {
+        box-shadow: 0 0 0 3px @color-dots;
+      }
+    }
+  }
+}

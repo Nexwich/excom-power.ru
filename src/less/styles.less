@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* CSS Document */
+@import "system/mixins";
+
+@import "system/varitables";
+
+/* Дополнительные */
+@import "additional/reset";
+
+@import "additional/netcat";
+
+@import "./additional/nav-app";
+
+@import (less) "../../node_modules/animate.css/animate.css";
+
+html,
+body { }
+
+body { background: white; }
+
+/* Верстка */
+.website {
+  display: flex;
+  color: @color-font;
+  font-family: @font-default;
+  font-size: 16px;
+  line-height: 1.2;
+  position: relative;
+  
+  @import "elements";
+  
+  @import "widgets";
+  
+  @import "components";
+  
+  @import "layouts/mobile-header";
+  
+  @import "layouts/mobile-search";
+  
+  @import "layouts/mobile-nav";
+  
+  @import "layouts/nav";
+  
+  /*Верхний колонтитул*/
+  @import "layouts/header";
+  
+  /* Контент */
+  @import "layouts/main";
+  
+  /* Нижний колонтитул */
+  @import "layouts/footer";
+  
+}
+
+@media (max-width: @responsive-mobile) {
+  
+  [id=website] { font-size: 15px; padding-bottom: 188px; padding-top: 53px;
+    
+    &.page-title { padding-top: 0; }
+  }
+}

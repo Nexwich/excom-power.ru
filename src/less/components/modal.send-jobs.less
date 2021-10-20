@@ -1,0 +1,16 @@
+@import "../system/varitables";
+@import "../system/mixins";
+
+
+&.send-jobs { padding: 0;
+  
+  .flex { display: flex; align-items:center; }
+  .image { flex-shrink:0; }
+  .send-jobs { padding: 30px 80px; }
+  .title { color:inherit; text-transform: none; font-size: 35px; }
+  
+  @media (max-width: @responsive-mobile) {
+    .image { display: none; }
+    .send-jobs { padding: 30px 20px; }
+  }
+}

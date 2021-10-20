@@ -1,0 +1,16 @@
+@import "../system/varitables";
+@import "../system/mixins";
+
+
+&.gallery { display: flex; flex-wrap: wrap; align-content: flex-start; margin: -1px; overflow:hidden;
+  
+  .gallery-image { width: 25%; padding: 1px;
+    &:first-child { width: 100%; }
+    &:nth-child(2),
+    &:nth-child(3) { width: 50%; }
+    
+    img { display: block; }
+    a { display: block; }
+  }
+  
+}

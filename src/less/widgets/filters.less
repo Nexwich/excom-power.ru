@@ -1,0 +1,55 @@
+@import "../system/varitables";
+// mixins
+@import "../system/mixins";
+
+&.filters {
+  
+  .filter {
+    margin-bottom: 45px;
+  }
+  
+  .filter-years {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px;
+    font-family: @font-roboto;
+    font-weight: 500;
+  }
+  
+  .filter-year {
+    line-height: 32px;
+    border: 1px dotted @color-default;
+    color: @color-default;
+    background: #fafafa;
+    margin: 2px 7px;
+    border-radius: 3px;
+    padding: 0 16px;
+    
+    &.--active {
+      background: @color-default;
+      border-style: solid;
+      color: white;
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  
+  .responsive-mobile {
+    display: none;
+  }
+  
+  @media (max-width: @responsive-mobile) {
+    
+    .responsive-mobile {
+      display: block;
+    }
+    
+    // Фильтр
+    .filter-years {
+      display: none;
+    }
+  }
+}

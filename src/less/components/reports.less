@@ -1,0 +1,20 @@
+@import "../system/varitables";
+@import "../system/mixins";
+
+
+&.reports {
+  
+  .title { border-bottom: 1px solid #e2e2e2; font-size: 25px; padding-bottom: 10px; }
+  
+  // Список
+  .reports { margin-bottom: 60px; }
+  .report { display: flex; margin-bottom: 15px; }
+  .report-icon { display: inline-block; flex-shrink: 0;
+    .icon { display: flex; justify-content: center; align-items: center; width: 35px; height: 35px; background: #fafafa; border: 1px dotted @color-default; margin-right: 10px; border-radius: 4px; }
+    a { text-decoration: none; }
+  }
+  .report-name { display: inline-flex; align-items: center; min-height: 35px;
+    a { color: inherit; }
+  }
+  
+}

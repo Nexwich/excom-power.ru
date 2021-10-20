@@ -1,0 +1,67 @@
+@import "../../less/system/varitables";
+// mixins
+@import "../../less/system/mixins";
+
+.mobile-header {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #433f3d;
+  border-bottom: 4px solid @color-orange-hover;
+  z-index: 5;
+  
+  &.active {
+    background: @color-orange;
+    
+    .mobile-nav--open {
+      display: none;
+    }
+    
+    .mobile-nav--close {
+      display: flex;
+    }
+  }
+}
+
+.mobile-header--wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 52px;
+  padding-right: 10px;
+}
+
+.mobile-header--link {
+  flex-shrink: 0;
+  height: 52px;
+  text-decoration: none;
+  color: white;
+  padding: 0 7px;
+  display: inline-block;
+}
+
+.mobile-header--nav-link {
+  background: #2f2d2c;
+  color: @color-orange-hover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 60px;
+}
+
+.mobile-header--logo {
+  padding: 0 20px;
+}
+
+@media (max-width: @responsive-mobile) {
+  
+  .mobile-header {
+    display: block;
+  }
+}

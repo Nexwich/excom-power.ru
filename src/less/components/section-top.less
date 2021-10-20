@@ -1,0 +1,68 @@
+@import "../system/varitables";
+// mixins
+@import "../system/mixins";
+
+.section-top {
+  padding-top: 50px;
+  background: center center;
+  background-size: cover;
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.section-top--content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.section-top--contacts {
+  display: flex;
+  font-size: 20px;
+}
+
+.section-top--icon {
+  display: flex;
+  width: 29px;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid @color-default;
+  color: @color-default;
+  margin-right: 20px;
+  font-size: 13px;
+  
+  &:hover {
+    background: @color-default;
+    color: white;
+  }
+}
+
+.section-top--phone {
+  font-weight: bold;
+  position: relative;
+}
+
+.section-top--locale {
+  box-shadow: 0 0 3 fade(black, 30%);
+  margin-left: 28px;
+}
+
+@media (max-width: @responsive-mobile) {
+  
+  .section-top--contacts {
+    display: none;
+  }
+  
+  .section-top--content {
+    margin: 0;
+  }
+  
+  .section-top {
+    padding: 25px 0 0;
+  }
+}

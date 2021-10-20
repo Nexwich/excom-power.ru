@@ -1,0 +1,27 @@
+@import "../system/varitables";
+@import "../system/mixins";
+
+
+&.personal {
+  
+  .announce { font-size: 22px; font-weight: 300; }
+  
+  
+  // Персонал
+  .personal { display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0 -10px; font-weight: 300; }
+  .persona { width: 200px; margin: 50px 10px 0; text-align: center; }
+  
+  .persona-image { height: 200px; background: #d6d6d6; border-radius: 50%; background: center center no-repeat; background-size: cover; overflow: hidden; margin-bottom: 30px; }
+  .persona-name { font-weight: bold; font-size: 20px; margin-bottom: 10px; }
+  .persona-position { font-size: 16px; font-weight: 100; }
+  
+  
+  @media (max-width: @responsive-mobile) {
+    .announce { font-size: 18px; }
+    
+    
+    // Персонал
+    .personal { display: block; }
+    .persona { margin: 45px auto; }
+  }
+}

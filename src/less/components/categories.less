@@ -1,0 +1,30 @@
+@import "../system/varitables";
+// mixins
+@import "../system/mixins";
+
+.categories {
+}
+
+.categories--list-block {
+  display: flex;
+  margin: -12px;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  
+  & > * {
+    flex-basis: 50%;
+    padding: 12px;
+  }
+}
+
+.categories--list {
+  padding-top: 60px;
+}
+
+@media (max-width: @responsive-mobile) {
+  
+  .categories--list-block {
+    display: block;
+    padding: 0;
+  }
+}

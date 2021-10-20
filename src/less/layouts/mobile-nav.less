@@ -1,0 +1,60 @@
+@import "../../less/system/varitables";
+// mixins
+@import "../../less/system/mixins";
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: @color-nav-mobile;
+  z-index: 6;
+  color: white;
+  padding-bottom: 120px;
+  overflow: auto;
+  
+  &.active {
+    display: block;
+    
+    &.page-title {
+      top: 0;
+      padding-top: 53px;
+    }
+  }
+}
+
+.mobile-nav--close {
+  display: none;
+  color: white;
+  background: #2f2d2c;
+}
+
+.mobile-nav--nav {
+  background: #2f2d2c;
+  padding: 0 8px;
+}
+
+.mobile-nav--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+.mobile-nav--contacts {
+  display: flex;
+}
+
+.mobile-nav--phone {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin: 40px 0 15px;
+}
+
+.mobile-nav--button {
+  margin-right: 20px;
+}

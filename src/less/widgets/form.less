@@ -1,0 +1,33 @@
+@import "../system/varitables";
+@import "../system/mixins";
+
+
+&.form {
+  
+  .fields {}
+  .field { display: block; margin-bottom: 12px;
+    &.select {
+      .field-input { display: inline-block; position: relative; border-radius: 3px; background: @color-default;
+        &:before { content: '\e910'; width: 30px; font-family: @font-icomoon; color: white; display: flex; justify-content: center; align-items: center; position: absolute; top: 0; bottom: 0; right: 0; z-index: 1; }
+        select { position: relative; z-index: 2;}
+      }
+    }
+    &.file { display: flex; flex-wrap: wrap; align-items: center; margin-left: -10px; margin-right: -10px;
+      & > span { margin: 0 10px; }
+    }
+    &.checkbox { display: flex; align-items: center; margin-left: -10px; margin-right: -10px;
+      & > span { margin: 0 10px; }
+    }
+    
+    & > span { display: block; }
+  }
+  .field-label {}
+  .field-input { position: relative; border-radius: 4px; overflow: hidden;
+    * { position: relative; z-index: 2; }
+    .icon { display: flex; align-items: center; width: 40px; height: 100%; position: absolute; top: 0; right: 0; color: #757575; justify-content: center; z-index: 1; }
+  }
+  
+  
+  .agreed { font-size: 10px; color: #8b8b8b; margin-top: 40px; }
+  
+}

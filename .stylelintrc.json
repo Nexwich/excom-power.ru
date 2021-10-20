@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-airbnb",
+    "stylelint-order"
+  ],
+  "rules": {
+    "max-nesting-depth": 10,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ]
+  }
+}
+
