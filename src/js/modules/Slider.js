@@ -14,6 +14,11 @@ export default class Slider {
       const sliderData = $slider.data('slider') || {};
 
       $slider.slick(sliderData);
+
+      $('body').on('click', '[data-slick-to-go]', (event) => {
+        const slide = $(event.currentTarget).data('slick-to-go');
+        $slider.slick('slickGoTo', slide);
+      });
     });
   }
 

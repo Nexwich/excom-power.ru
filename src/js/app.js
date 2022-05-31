@@ -7,7 +7,6 @@ $(() => new Waves().render());
 $(() => new Slider().render());
 
 function queryItems(url) {
-  console.log(url);
   window.location.href = url;
 }
 
@@ -128,11 +127,11 @@ if ($('.js--viewports').length) {
 
     $('.js--viewports [data-viewport]').each((index, element) => {
       const $this = $(element);
-      const { top } = $this.offset();
-      const bottom = $this.height() + top;
+      const { top: topViewport } = $this.offset();
+      const bottom = $this.height() + topViewport;
       const viewport = $this.data('viewport');
 
-      if (center >= top && center < bottom) {
+      if (center >= topViewport && center < bottom) {
         $(`[data-viewport-link=${viewport}]`).addClass('active').siblings().removeClass('active');
       }
     });
